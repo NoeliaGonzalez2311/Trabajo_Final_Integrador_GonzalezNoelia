@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es" data-bs-theme="dark">
+<html lang="es" data-bs-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,16 +12,25 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
 
-    <title>Bootstrap 6.0 - Portafolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Noelia Gonzalez | Portafolio personal</title>
   </head>
 
   <body>
     <header>
       <!-- Menú de navegación -->
-      <nav class="navbar sm:navbar-expand bg-1 fg-2">
+      <nav class="navbar lg:navbar-expand bg-1 fg-2">
         <div class="container">
-          <a class="navbar-brand" href="#">
-            Noelia <span class="fw-bold">Gonzalez</span>
+          <a
+            class="navbar-brand d-flex align-items-center gap-3"
+            href="#inicio"
+          >
+            <img src="img/LogoNG.png" class="logo img-fluid" alt="Logo NG" />
+            <span>Noelia <span class="fw-bold">Gonzalez</span></span>
           </a>
 
           <button
@@ -55,16 +64,25 @@
             <div class="drawer-body justify-content-end">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="#portafolio"
-                    >Portafolio</a
-                  >
+                  <a class="nav-link" href="#inicio">Inicio</a>
                 </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#portafolio">Proyectos</a>
+                </li>
+
                 <li class="nav-item">
                   <a class="nav-link" href="#sobre-mi">Sobre mí</a>
                 </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#habilidades">Habilidades</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#encantos">Encantos Joyas</a>
+                </li>
+
                 <li class="nav-item">
                   <a class="nav-link" href="#contacto">Contacto</a>
                 </li>
@@ -76,24 +94,29 @@
     </header>
 
     <main>
-      <!-- Sección nombre -->
-      <section class="d-flex flex-column align-items-center p-12">
-        <img
-          src="img/Avatar.png"
-          class="avatar img-fluid object-fit-contain"
-          alt="Avatar Noelia"
-        />
+      <!-- Sección Inicio -->
+      <section id="inicio" class="d-flex align-items-center inicio">
+        <div class="presentacion">
+          <p class="saludo">¡Hola! Soy</p>
 
-        <h1 class="pt-6">Noelia Gonzalez</h1>
+          <h1>Noelia Gonzalez</h1>
 
-        <!-- Separador estrella -->
-        <div class="d-flex gap-3 align-items-center py-4">
-          <div class="line"></div>
-          <i class="fa-solid fa-star text-white"></i>
-          <div class="line"></div>
+          <h2>Entre la tecnología y la creatividad.</h2>
+
+          <p>
+            Soy estudiante universitaria y emprendedora. Disfruto aprender,
+            crear y transformar ideas en proyectos, tanto en el mundo digital
+            como en el artesanal.
+          </p>
+
+          <a href="#portafolio" class="boton-inicio"> Conocé mis proyectos </a>
         </div>
 
-        <p>Desarrolladora Web Front End</p>
+        <img
+          src="img/WhatsApp Image 2026-09-03 at 16.20.10.jpeg"
+          class="foto-inicio img-fluid"
+          alt="Fotografía de Noelia Gonzalez"
+        />
       </section>
 
       <!-- Sección portafolio -->
@@ -152,7 +175,7 @@
             <a
               type="button"
               class="btn-outline theme-primary"
-              href="https://noeliagonzalez2311.github.io/C5S/"
+              href="https://github.com/NoeliaGonzalez2311/C5S.git"
               target="_blank"
               >Visitar sitio</a
             >
@@ -193,7 +216,7 @@
             <a
               type="button"
               class="btn-outline theme-primary"
-              href="https://noeliagonzalez2311.github.io/C22S-Sass-Batman/"
+              href="https://github.com/NoeliaGonzalez2311/C22S-Sass-Batman.git"
               target="_blank"
               >Visitar sitio</a
             >
@@ -234,7 +257,7 @@
             <a
               type="button"
               class="btn-outline theme-primary"
-              href="https://noeliagonzalez2311.github.io/C9S/"
+              href="https://github.com/NoeliaGonzalez2311/C9S.git"
               target="_blank"
               >Visitar sitio</a
             >
@@ -271,7 +294,7 @@
             <a
               type="button"
               class="btn-outline theme-primary"
-              href="https://noeliagonzalez2311.github.io/Petshop_Integrador/"
+              href="https://github.com/NoeliaGonzalez2311/Petshop_Integrador.git"
               target="_blank"
               >Visitar sitio</a
             >
@@ -308,7 +331,7 @@
             <a
               type="button"
               class="btn-outline theme-primary"
-              href="https://noeliagonzalez2311.github.io/C11S-Flexbox/"
+              href="https://github.com/NoeliaGonzalez2311/C11S-Flexbox.git"
               target="_blank"
               >Visitar sitio</a
             >
@@ -353,7 +376,7 @@
             <a
               type="button"
               class="btn-outline theme-primary"
-              href="https://noeliagonzalez2311.github.io/Simulacro_2doParcial/"
+              href="https://github.com/NoeliaGonzalez2311/Simulacro_2doParcial.git"
               target="_blank"
               >Visitar sitio</a
             >
@@ -377,15 +400,15 @@
 
           <div class="row text-start mb-6">
             <p class="lg:col-6">
-              Soy estudiante y actualmente me estoy formando en desarrollo web.
-              Durante la cursada aprendí a utilizar HTML, CSS y Bootstrap para
-              crear páginas web.
+              Soy estudiante de la Universidad Nacional de La Pampa y
+              emprendedora. Me interesa el mundo de la tecnología, el diseño y
+              la creación de nuevos proyectos.
             </p>
 
             <p class="lg:col-6">
-              Me considero una persona creativa, responsable y con muchas ganas
-              de seguir aprendiendo. Disfruto desarrollar proyectos y poner en
-              práctica los conocimientos adquiridos durante mi formación.
+              Me considero una persona creativa, curiosa y con ganas de seguir
+              aprendiendo. Disfruto combinar mis conocimientos con la
+              creatividad para transformar ideas en realidad.
             </p>
           </div>
 
@@ -398,6 +421,106 @@
             >
               <i class="fa-solid fa-download me-2"></i>Ver mi CV
             </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Habilidades -->
+      <section id="habilidades" class="p-12">
+        <div class="container text-center">
+          <h2>Mis habilidades</h2>
+
+          <p>Herramientas y tecnologías que utilizo en mis proyectos.</p>
+
+          <div class="d-flex flex-wrap justify-content-center gap-6 pt-6">
+            <div class="habilidad">
+              <i class="fa-brands fa-html5"></i>
+              <h4>HTML</h4>
+            </div>
+
+            <div class="habilidad">
+              <i class="fa-brands fa-css3-alt"></i>
+              <h4>CSS</h4>
+            </div>
+
+            <div class="habilidad">
+              <i class="fa-brands fa-js"></i>
+              <h4>JavaScript</h4>
+            </div>
+
+            <div class="habilidad">
+              <i class="fa-brands fa-bootstrap"></i>
+              <h4>Bootstrap</h4>
+            </div>
+
+            <div class="habilidad">
+              <i class="fa-brands fa-github"></i>
+              <h4>GitHub</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Encantos Joyas -->
+      <section id="encantos" class="p-12">
+        <div class="container text-center">
+          <h2>Mi emprendimiento</h2>
+
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-center gap-6 pt-6"
+          >
+            <img
+              src="img/proceso.jpeg"
+              class="foto-taller img-fluid"
+              alt="Proceso de elaboración artesanal"
+            />
+
+            <div class="presentacion-encantos">
+              <img
+                src="img/logoencantos.png"
+                class="logo-encantos img-fluid"
+                alt="Logo Encantos Joyas"
+              />
+
+              <h3>Creando desde 2019</h3>
+
+              <p>
+                Encantos Joyas nace de mi pasión por el diseño y la creación
+                artesanal. Elaboro piezas únicas que combinan creatividad,
+                dedicación y amor por los pequeños detalles.
+              </p>
+
+              <a
+                href="https://www.instagram.com/encantoss.joyass/"
+                class="boton-encantos"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram"></i>
+                Conocé Encantos
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10"
+          >
+            <img
+              src="img/bronce.jpeg"
+              class="foto-joya img-fluid"
+              alt="Joyas artesanales"
+            />
+
+            <img
+              src="img/anillos.jpeg"
+              class="foto-joya img-fluid"
+              alt="Anillos artesanales"
+            />
+
+            <img
+              src="img/anilllos_mariposa.jpeg"
+              class="foto-joya img-fluid"
+              alt="Piezas de Encantos Joyas"
+            />
           </div>
         </div>
       </section>
@@ -421,44 +544,44 @@
             <div style="width: 100%; max-width: 600px">
               <form class="text-start">
                 <div class="mb-3 text-start">
-                  <label for="nombre" class="form-label mb-2 text-white-50"
-                    >Nombre Completo</label
-                  >
+                  <label for="nombre" class="form-label mb-2">
+                    Nombre Completo
+                  </label>
+
                   <input
                     type="text"
-                    class="form-control border-0 border-bottom rounded-0 bg-transparent text-white"
+                    class="form-control border-0 border-bottom rounded-0"
                     id="nombre"
                   />
                 </div>
 
                 <div class="mb-3 text-start">
-                  <label for="email" class="form-label text-white-50"
-                    >Email</label
-                  >
+                  <label for="email" class="form-label"> Email </label>
+
                   <input
                     type="email"
-                    class="form-control border-0 border-bottom rounded-0 bg-transparent text-white"
+                    class="form-control border-0 border-bottom rounded-0"
                     id="email"
                   />
                 </div>
 
                 <div class="mb-3 text-start">
-                  <label for="telefono" class="form-label text-white-50"
-                    >Número de Teléfono</label
-                  >
+                  <label for="telefono" class="form-label">
+                    Número de Teléfono
+                  </label>
+
                   <input
                     type="tel"
-                    class="form-control border-0 border-bottom rounded-0 bg-transparent text-white"
+                    class="form-control border-0 border-bottom rounded-0"
                     id="telefono"
                   />
                 </div>
 
                 <div class="mb-4 text-start">
-                  <label for="mensaje" class="form-label text-white-50"
-                    >Mensaje</label
-                  >
+                  <label for="mensaje" class="form-label"> Mensaje </label>
+
                   <textarea
-                    class="form-control border-0 border-bottom rounded-0 bg-transparent text-white"
+                    class="form-control border-0 border-bottom rounded-0"
                     id="mensaje"
                     rows="3"
                   ></textarea>
@@ -477,14 +600,14 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-primary py-5">
+    <footer class="pie-pagina py-5">
       <div class="container">
         <div class="row justify-content-center">
           <div class="lg:col-4 text-center">
             <div>
-              <h3>Mi lugar</h3>
-              <p>Calle N</p>
-              <p>Ciudad, Estado CP</p>
+              <h3>Mi ubicación</h3>
+              <p>Santa Rosa, La Pampa</p>
+              <p>Argentina</p>
             </div>
           </div>
 
@@ -497,15 +620,7 @@
             >
               <a
                 class="social text-white text-decoration-none border border-2 border-white rounded-circle p-5 d-flex align-items-center justify-content-center"
-                href="#"
-                target="_blank"
-              >
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-
-              <a
-                class="social text-white text-decoration-none border border-2 border-white rounded-circle p-5 d-flex align-items-center justify-content-center"
-                href="#"
+                href="https://www.instagram.com/encantoss.joyass/"
                 target="_blank"
               >
                 <i class="fa-brands fa-instagram"></i>
@@ -513,15 +628,7 @@
 
               <a
                 class="social text-white text-decoration-none border border-2 border-white rounded-circle p-5 d-flex align-items-center justify-content-center"
-                href="#"
-                target="_blank"
-              >
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-
-              <a
-                class="social text-white text-decoration-none border border-2 border-white rounded-circle p-5 d-flex align-items-center justify-content-center"
-                href="#"
+                href="https://github.com/NoeliaGonzalez2311"
                 target="_blank"
               >
                 <i class="fa-brands fa-github"></i>
@@ -530,10 +637,10 @@
           </div>
 
           <div class="lg:col-4 text-center">
-            <h3>Sobre mi</h3>
+            <h3>Sobre mí</h3>
             <p>
-              Soy una persona creativa y con ansias de aprender. Tengo
-              conocimientos de HTML, CSS y Bootstrap.
+              Soy una persona creativa y con ganas de seguir aprendiendo. Tengo
+              conocimientos de HTML, CSS, JavaScript y Bootstrap.
             </p>
           </div>
         </div>
